@@ -1,0 +1,70 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{Style/style}
+\titlepage{}
+
+\author{Zecchin Giacomo}
+\date{2017/05/21}
+\intestazioni{Web Information Management}
+\pagestyle{empty}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\selectlanguage{english}
+
+	\begin{titlepage}
+		\centering
+		\vspace{6cm}
+		{\huge\bfseries Web Information Management\par}
+		\vspace*{0,5cm}
+		{\Large Analisi di usabilità} \\*
+		\line(1,0){350} \\
+		\vspace{3cm}
+		{\scshape\LARGE Università di Padova \par}
+		\vspace{1cm}
+		\begin{tabular}{c|c}
+
+			\large{\hfill\textbf{Sito analizzato}}	& \large\href{http://www.lagunapaintball.it/}{\textbf{www.lagunapaintball.it}} \\
+			\vspace*{0,7cm}
+			{\hfill\textbf{Periodo d'analisi}} 	& Giugno 2017 \\
+			{\hfill\textbf{Nominativo}} 		& Zecchin Giacomo \\
+			{\hfill\textbf{Matricola}} 			& 1070122 \\
+		\end{tabular}
+		\vspace*{2cm}
+
+		\begin{abstract}
+		Il presente documento si propone di discutere e mettere in evidenza le problematiche dell'usabilità rilevate durante l'analisi del sito web \href{http://www.lagunapaintball.it/}{\textbf{www.lagunapaintball.it}}. L'analisi vera e propria è preceduta da un fase preliminare in cui si descrive la struttura del sito e il contenuto che esso presenta. Successivamente attraverso diverse sezioni vengono trattati i differenti aspetti che compongono l'usabilità di un sito web. In queste si riportano i problemi individuati, le scelte di design del sito che impattano positivamente o negativamente ed infine una sottosezione conclusiva che tenta di dare oggettivamente delle valutazioni generali sugli aspetti analizzati.\\
+		\vspace{0,5cm}
+		Nonostante questo documento tenti di essere il più oggettivo possibile, il suo contenuto potrebbe essere del tutto opinionabile. Solo un'analisi più approfondita, che comprende la raccolta di dati reali di centinaia (se non migliaia) di utenti, può forse provare quali soluzioni di design siano le più apprezzate dagli utenti del sito.
+	\end{abstract}
+	\end{titlepage}
+
+\selectlanguage{italian}
+
+	\pagestyle{myfront}
+
+	\newpage		
+		\tableofcontents
+	\newpage
+		\listoffigures\vspace*{1cm}
+		\listoftables
+
+	\label{LastFrontPage}
+		\newpage
+			\pagestyle{mymain}	
+			\subfile{Sezioni/AnalisiPreliminare}
+		\newpage	
+			\subfile{Sezioni/AnalisiPagine}
+		\newpage	
+			\subfile{Sezioni/Contenuto}
+		\newpage	
+			\subfile{Sezioni/Mobile}
+		\newpage	
+			\subfile{Sezioni/Conclusioni}
+		\newpage
+			\subfile{Sezioni/Appendice.tex}
+
+	\label{LastPage}
+
+\end{document}
